@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio_4</title>
+    <link rel="stylesheet" href="css/styles.css">  <!-- Enlace al archivo CSS -->
+    
+    <script type="text/javascript" src="js/miscript.js"></script>
+</head>
+<body>
+    <a href="#tareas">Gestión de Tareas</a> |
+
+    <h1>HTML LABORATORIO _ 4  EXPRESIONES CONDICIONALES</h1>
+   <p
+    m == "HOLA MUNDO: ";
+    console.log("Imprima m:"+ m);<br>
+    a. el valor de  la variable "m" este entre -59 y 10;<br>
+       m <-59 && m < 10   <br>
+    b. el valor de  la variable "m" este en intervalo(10,80);<br>
+         m>10 && m < 80  <br>
+    c. el valor de  la variable "m" sea dos veces el valor de la variable"n";<br>
+     m == 2 * n  <br>
+    d. el valor de  la variable "m" este en intervalo[0,10];<br>
+      m >=0 && m <=10 <br>
+    e. el valor de  la variable "m" sea diferente a 10;<br>
+    m!=10 <br>
+    f. el valor de  la variable "m" sea diferente a 5 y  10;<br>
+    m!==5 && m!== 10 <br>
+    g. el valor de  la variable "m" sea diferente  al string "SI",String "NO";<br>
+    m !=="Si" && m !=="NO" <br>
+    h.verifique que variable "m" tenga valores"+","-","*","/","%", <br>
+    m === "+" || m === "-" || m === "*" || m === "/" || m === "%"  <br>
+    i.el valor de  la variable "m" sea diferente al valor de la variable"n" y este en intervalo[0,10];<br>
+    m!==n && n >=0 && m <= 10 <br>
+
+    j. el valor de la variable "m" sea mayor a 5; <br>
+    m > 5 <br>
+    k.el valor de la variable "m" sea menor a 10 y mayor 10; <br>
+    m < 10 || m > 20 <br>
+    L.La suma de la variable "m " + "n" mayor a 8; <br>
+    m + n > 8 <br>
+    M. La suma de la variable "m " + "n" no sea mayor que variable "X"; <br>
+    m+n <= x <br>
+    N. El valor de  variable "m" diferente a vocal;<br>
+    m !== VOCAL[aeiouAEIOU] <br>
+
+    0. vALOR VARIABLE "M " sea  vocal; <br>
+    m == VOCAL[AEIOUaeiou] <br>
+
+    p.El valor variable "m" sea numerica y este en intervalo(0-9];<br>
+    m ===n'number' && m >= 0 && m < = 9 <br>
+
+    q.El valor de variable "m " este en intervalo (3.8: 50]<br>
+    m > 3.8 && <=50  <br> <br> <br> <br>
+
+<section id="tareas">    
+</p>
+   
+   <h2>EsCRIBA EN LENGUAJE PROGRAMACION JAVASCRIPT</h2>
+   <p>
+    // Ejercicio 2: Escribir los números de 1 a n, n > 0. ; <br>
+let n= 5 <br>
+console.log("Ejercicio 2:");<br>
+for (let i = 1; i <= n; i++) { <br>
+    console.log(i); <br>
+} <br>
+
+// Ejercicio 3: Escribir los números de p a q, de p en p; p > 0 y q > p.; <br>
+let p = 7;  <br>
+let q = 30; <br>
+console.log("Ejercicio 3:"); <br>
+for (let i = p; i <= q; i += p) { <br>
+    console.log(i); <br>
+} <br>
+
+// Ejercicio 4: Calcular y escribir la suma de los números de 1 a n, n > 0.  <br>
+let n2 = 8;  <br>
+let suma = 0; <br>
+for (let i = 1; i <= n2; i++) {  <br>
+    suma += i; <br>
+} <br>
+console.log("Ejercicio 4:"); <br>
+console.log(`La suma de los números de 1 a ${n2} es ${suma}.`); <br>
+
+// Ejercicio 5: Obtener y escribir la suma de n números dados por el usuario. <br>
+// Para este ejercicio, simularemos la entrada del usuario con un array de números. <br>
+let numeros = [3, 5, 7, 2, 8];  <br>
+let suma2 = 0; <br>
+for (let numero of numeros) { <br>
+    suma2 += numero; <br>
+}
+console.log("Ejercicio 5:"); <br>
+console.log(`La suma de los números dados es ${suma2}.`); <br>
+
+
+6. obtener el producto  de n numeros dados por el usuario;<br>
+let n = prompt("Digitalize un numero n ");<br>
+let m = prompt("Digitalize un numero m ");<br>
+producto = n *m ;<br>
+console.log("El producto n multiplicado n es: " + producto);<br>
+
+7.generar la tabla de mutiplica por 7  cero a  9;<br>
+let n = 7;<br>
+producto = 0;<br>
+
+for (let i= 0; i <= 9 ; i++)<br>
+producto +i;<br>
+
+8.Hacer un algoritmo que escriba siguientes 100 numeros de un numero ingresado por el usuario;<br>
+let n = prompt("Digitalize un numero n ");<br>
+for(let i = 0; i <=[100]; i++){  <br>
+  console.log("Los numeros registrados son: ") <br>
+} <br>
+
+
+
+// Ejercicio 6: Obtener y escribir el producto de n números dados por el usuario. <br>
+let numeros = [2, 3, 4];  <br>
+let producto = 1; <br>
+for (let numero of numeros) { <br>
+    producto *= numero; <br>
+}
+console.log("Ejercicio 6:"); <br>
+console.log(`El producto de los números dados es ${producto}.`); <br>
+
+// Ejercicio 7: Generar la tabla de multiplicar que el usuario desee. El multiplicador deberá variar desde 0 hasta 9.<br>
+let tabla = 7;   <br>
+console.log("Ejercicio 7:"); <br>
+for (let i = 0; i <= 9; i++) { <br>
+    console.log(`${tabla} x ${i} = ${tabla * i}`); <br>
+}
+
+// Ejercicio 8: Hacer un algoritmo que escriba los siguientes 100 números a partir de un número ingresado por el usuario.<br>
+let inicio = 50; <br>
+console.log("Ejercicio 8:"); <br>
+for (let i = inicio; i < inicio + 100; i++) { <br>
+    console.log(i); <br>
+}
+
+// Ejercicio 9: Escriba la suma de cada número ingresado por el usuario, desde 1 hasta el número. <br>
+El algoritmo debe terminar cuando el usuario ingrese un número menor o igual que cero. <br>
+
+let numerosUsuario = [5, 3, 0];  <br>
+console.log("Ejercicio 9:"); <br>
+for (let num of numerosUsuario) { <br>
+    if (num <= 0) { <br> <br>
+        break; <br>
+    } <br>
+    let suma = 0; <br>
+    for (let i = 1; i <= num; i++) { <br>
+        suma += i;  <br>
+    }
+    console.log(`La suma de los números de 1 a ${num} es ${suma}.`);  <br>
+}
+
+// Ejercicio 10: Escribir los números pares de 1 a n, si n es múltiplo de 5, o los impares si no es múltiplo de 5. <br>
+let n = 22;  <br>
+console.log("Ejercicio 10:"); <br>
+if (n % 5 === 0) { <br>
+    for (let i = 2; i <= n; i += 2) { <br>
+        console.log(i); <br>
+    }  <br>
+} else { <br>
+    for (let i = 1; i <= n; i += 2) {  <br>
+        console.log(i); <br>
+    }
+}
+
+
+
+   </p>
+
+</section>
+    
+
+
+<h1>https://github.com/leonardober/TechnoVallleLab_3.git</h1>
+<a target="_self" href="https://github.com/leonardober/technovalleLab3_localstorage.git">ENLACE A GITHUB</a> <br>  
+    
+</body>
+</html>
